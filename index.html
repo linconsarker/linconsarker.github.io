@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lincon Sarker</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/img.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2rem;
+      color: white;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 1rem 2rem;  /* Ensuring equal padding */
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 200px;  /* Equal width for both buttons */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 60px;  /* Equal height for both buttons */
+    }
+
+    .btn svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .linkedin {
+      background-color: #0077b5;
+    }
+
+    .linkedin:hover {
+      background-color: #005f8c;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 119, 181, 0.4);
+    }
+
+    .gmail {
+      background-color: #d93025;
+    }
+
+    .gmail:hover {
+      background-color: #a0231c;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(217, 48, 37, 0.4);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 0.6rem 1.2rem;
+        width: 150px;  /* Adjust for smaller screens */
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Lincon Sarker</h1>
+    <p>Civil Engineer</p>
+    <div class="buttons">
+      <!-- LinkedIn Button -->
+      <a class="btn linkedin" href="https://www.linkedin.com/in/linconsarker/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
+          <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341C24.11 107 0 82.92 0 53.64 0 24.36 24.11 0 53.84 0s53.84 24.36 53.84 53.64c0 29.28-24.1 53.36-53.84 53.36zM447.9 448h-92.68V302.4c0-34.7-12.46-58.4-43.65-58.4-23.82 0-38.01 16-44.26 31.4-2.28 5.5-2.85 13.2-2.85 20.9V448h-92.84s1.24-267.9 0-295.1h92.84v41.8c-.18.3-.43.6-.61.9h.61v-.9c12.33-19 34.41-46.2 83.67-46.2 61.06 0 106.84 39.8 106.84 125.4V448z"/>
+        </svg>
+        LinkedIn
+      </a>
+
+      <!-- Gmail Button -->
+      <a class="btn gmail" href="mailto:sarker.buet12@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white">
+          <path d="M502.3 190.8l-192-160C296.6 21.58 280.3 16 264 16s-32.58 5.578-46.3 14.83l-192 160C7.035 202.5 0 219.9 0 238.4V456c0 30.93 25.07 56 56 56h400c30.93 0 56-25.07 56-56V238.4C512 219.9 504.1 202.5 502.3 190.8zM264 48c6.484 0 12.97 2.109 18.23 6.391L464 202.6V238.4l-192 160c-5.656 4.719-13.17 7.594-20.84 7.594s-15.19-2.875-20.84-7.594l-192-160V202.6l181.8-148.2C251 50.11 257.5 48 264 48zM456 464H56c-4.422 0-8-3.578-8-8V278.3l179.2 149c15.34 12.75 34.92 18.72 54.8 18.72s39.45-5.969 54.8-18.72L464 278.3V456C464 460.4 460.4 464 456 464z"/>
+        </svg>
+        Email
+      </a>
+    </div>
+  </div>
+</body>
+</html>
